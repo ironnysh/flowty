@@ -1,4 +1,4 @@
-![](https://fershad.com/image/fetch/f_auto,q_auto/https://fershad.com/img/87786cc2-1600.jpeg)
+![Rainbow coloured text](/logo-colour.svg)
 
 # IMPORTANT
 
