@@ -5,14 +5,14 @@ eleventyExcludeFromCollections: true
 <?xml version="1.0" encoding="utf-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     {% for page in pages %}
-       {%- if page.sitemap -%}
-        <url>
-            {%- if config.customDomain -%}
-            <loc>{{ config.customDomain | removeTrailingSlash }}{{ page.path }}</loc>
-            {%- else -%}
-            <loc>{{ config.webflowUrl | removeTrailingSlash }}{{ page.path }}</loc>
-            {%- endif -%}
-        </url>
-        {% endif %}
+    {%- if page.sitemap -%}
+    <url>
+        {%- if config.customDomain.size > 0 -%}
+        <loc>{{ config.customDomain | removeTrailingSlash }}{{ page.path }}</loc>
+        {%- else -%}
+        <loc>{{ config.webflowUrl | removeTrailingSlash }}{{ page.path }}</loc>
+        {%- endif -%}
+    </url>
+    {% endif %}
     {%- endfor -%}
 </urlset>
