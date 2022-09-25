@@ -1,5 +1,6 @@
 module.exports = {
     "webflowUrl": "", // Example: https://my-website.webflow.io
+    "customDomain": "", // Example: https://my-website.com
     "css": {
         "critical": false,
         "purge": false
@@ -32,5 +33,4 @@ module.exports = {
     "noindex": ["/404"],
     "customCodeHead": ``,
     "customCodeBody": ``,
-    "customDomain": "" // Example: https://my-website.com
 }
