@@ -1,0 +1,11 @@
+---
+permalink: /robots.txt
+eleventyExcludeFromCollections: true
+---
+User-agent: *
+Disallow:
+{% if config.customDomain %}
+Sitemap: {{ config.customDomain | removeTrailingSlash }}/sitemap.xml
+{%- else -%}
+Sitemap: {{ config.webflowUrl | removeTrailingSlash }}/sitemap.xml
+{%- endif -%}

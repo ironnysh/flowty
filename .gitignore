@@ -1,0 +1,9 @@
+node_modules
+.env
+_dev
+_site
+sample
+.cache
+.vscode
+**/_data/config.js
+flowty.zip

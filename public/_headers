@@ -1,0 +1,11 @@
+/flowty/css/*
+    Cache-Control: public, max-age=31536000, immutable
+
+/flowty/js/*
+    Cache-Control: public, max-age=31536000, immutable
+
+/flowty/img/*
+    Cache-Control: public, max-age=31536000, immutable
+
+/flowty/fonts/*
+    Cache-Control: public, max-age=31536000, immutable

@@ -1,0 +1,13 @@
+---
+pagination:
+  data: pages
+  size: 1
+  alias: currentPage
+permalink: "{{ currentPage.path }}/index.html"
+eleventyExcludeFromCollections: "{% unless currentPage.sitemap %} true {% endunless %}"
+tag: page
+eleventyComputed:
+  totalPages: "{{pages | size}}"
+---
+
+{% scrapePage currentPage.path currentPage.noindex config.customCodeHead config.customCodeBody %}
