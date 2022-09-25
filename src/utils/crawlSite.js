@@ -7,7 +7,6 @@ const generatePages = (sitemap, url) => sitemap.map(page => page.replace(`${url}
 const crawledPages = [`/`]
 const foundPages = [`/`, `/404`]
 const pagesToVisit = [`/`, `/404`]
-const excludeFromSitemap = []
 
 const crawlPage = async (pageToVisit, neatUrl) => {
   const page = await fetch(`${neatUrl}${pageToVisit}`)
@@ -20,10 +19,6 @@ const crawlPage = async (pageToVisit, neatUrl) => {
 
   const html = await page.text()
   const $ = cheerio.load(html)
-
-  if ($('body').attr('sitemap') === 'no') {
-    excludeFromSitemap.push(pageToVisit)
-  }
 
   const links = $('a')
   crawledPages.push(pageToVisit)
@@ -66,7 +61,7 @@ async function crawlSite(webflowUrl) {
   const pages = await generatePages(foundPages, neatUrl)
   console.log(`Total pages found: ${pages.length}`)
 
-  return { pages, excludeFromSitemap }
+  return { pages }
 }
 
 module.exports = crawlSite

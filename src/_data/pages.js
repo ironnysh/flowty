@@ -6,10 +6,10 @@ module.exports = async function () {
   const data = await crawlSite(webflowUrl)
   const pages = data.pages.map(page => ({
     path: page,
-    sitemap: !data.excludeFromSitemap.includes(page),
+    sitemap: !config.sitemapExclude.includes(page),
     noindex: config.noindex.includes(page),
   }))
 
-  console.log(`Found ${data.length} pages`)
+  console.log(`Found ${pages.length} pages`)
   return pages
 }

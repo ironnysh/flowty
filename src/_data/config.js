@@ -30,7 +30,7 @@ module.exports = {
     "generateRobots": false,
     "sitemapExclude": ["/404"],
     "noindex": ["/404"],
-    "customCodeHead": "",
-    "customCodeBody": "",
+    "customCodeHead": ``,
+    "customCodeBody": ``,
     "customDomain": "" // Example: https://my-website.com
 }
