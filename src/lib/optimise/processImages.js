@@ -115,7 +115,7 @@ const imageOperations = async (img, $, config, outputDir) => {
       }
 
       // TODO: Don't add srcset sizes if sizes is empty
-      newImage = `<picture ${className ? `class="${className}"` : ''} ${id ? `id=${id}` : ''}>
+      newImage = `<picture>
     ${Object.values(metadata)
       .map(
         imageFormat =>

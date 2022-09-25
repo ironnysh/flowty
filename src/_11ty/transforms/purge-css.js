@@ -14,9 +14,7 @@ const siteFolder = !dev ? '_site' : '_dev'
 const fontsFile = fs.existsSync(path.join(__dirname, `/../../../${siteFolder}/flowty/fonts/fonts.css`))
 
 const cssFiles = []
-if (config.css.download) {
-  cssFiles.push(`/${siteFolder}/flowty/css/main.css`)
-}
+cssFiles.push(`/${siteFolder}/flowty/css/main.css`)
 
 if (fontsFile) {
   cssFiles.push(`/${siteFolder}/flowty/fonts/fonts.css`)
