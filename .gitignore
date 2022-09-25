@@ -5,5 +5,4 @@ _site
 sample
 .cache
 .vscode
-**/_data/config.js
 flowty.zip
