@@ -1,9 +1,10 @@
 <img src="https://github.com/fershad/flowty/raw/main/logo-colour.svg" style="max-width: 100vw; width: 100%;" alt="" />
 
-# IMPORTANT
+# ⚠️⚠️ IMPORTANT ⚠️⚠️
 
 Please note that the Flowty project was abandoned before it ever got going. As such, it has had limited testing, is not formally supported, and is not actively maintained. You use it at your own risk.
 
+***
 ## Docs
 
 You can find guides to get started with Flowty at https://docs.flowty.site.
