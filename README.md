@@ -1,4 +1,4 @@
-![Rainbow coloured text](/logo-colour.svg)
+<img src="/fershad/flowty/raw/main/logo-colour.svg" style="max-width: 100vw; widht: 100%;" alt="" />
 
 # IMPORTANT
 
