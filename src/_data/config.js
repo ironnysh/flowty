@@ -27,8 +27,8 @@ module.exports = {
         "download": true,
         "disableAutoplay": false
     },
-    "generateSitemap": false,
-    "generateRobots": false,
+    "generateSitemap": true,
+    "generateRobots": true,
     "sitemapExclude": ["/404"],
     "noindex": ["/404"],
     "customCodeHead": ``,
