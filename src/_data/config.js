@@ -1,6 +1,6 @@
 module.exports = {
     "webflowUrl": "https://ronnys-supercool-site.webflow.io", // Example: https://my-website.webflow.io
-    "customDomain": "", // Example: https://my-website.com
+    "customDomain": "https://flowty-demo-five.vercel.app", // Example: https://my-website.com
     "css": {
         "critical": false,
         "purge": false
@@ -14,7 +14,7 @@ module.exports = {
             "remove": false
         },
         "jquery": {
-            "remove": false
+            "remove": true
         },
     },
     "preloadNavigation": true,
